@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="task"
+            type="com.gnyapp.vero_android_task.models.Task" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_14ssp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{task.task}"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{task.title}"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{task.description}"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{task.colorCode}"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:textColor="@color/black"/>
+                
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
